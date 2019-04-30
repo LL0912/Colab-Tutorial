@@ -50,8 +50,7 @@ Colab配置：
 
 <img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/5.png"  width = 60% height = 60% style="float: right">
 
-6.  运行 “ !nvidia-smi
-    ”（运行ubuntu命令时只需在前面加上！，若能出现图中结果，说明你成功薅到了资本主义羊毛。
+6.  运行`!nvidia-smi`（运行ubuntu命令时只需在前面加上！），若能出现图中结果，说明你成功薅到了资本主义羊毛。
 
 <img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/6.png"  width = 60% height = 60% style="float: right">
 
@@ -78,8 +77,7 @@ Colab配置：
 <img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/12.png"  width = 100% height = 100% style="float: right">
 
 4.  出现图中结果表明google
-    drive挂载成功，在左边文件里可以看到云盘的文件夹，对该文件夹的读写会直接影响到云盘内的文件。需要注意的是，想要访问该文件夹还需要先执行‘cd
-    ..’命令。
+    drive挂载成功，在左边文件里可以看到云盘的文件夹，对该文件夹的读写相当于直接对云盘内的文件进行操作。需要注意的是，想要访问该文件夹还需要先执行`cd..`命令。
 
 <img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/13.png"  width = 60% height = 60% style="float: right">
 
