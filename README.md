@@ -1,13 +1,10 @@
 Colaboratory 免费GPU服务器使用教程
 ==================================
 
-RSIDEA 刘寅贺 2019.4.30
+    RSIDEA 刘寅贺 2019.4.30
+<br>
 
-近日，Google Colab 官方在Twitter上表示，将为用户提供免费的Tesla T4 GPU（16 GB
-显存，2560个CUDA核心，8.1 TFLOPS）。随着组内越来越多的同学开始研究深度学习的方法，若能使用Colab可以一定程度上缓解组内计算资源紧张的情况。同时在虚拟机上还预装了大多数需要用到的库（TensorFlow,
-Keras, Pytorch,
-GDAL……），对新人来说也省去了配置环境的时间，可以直接开搞。并且与GEE的导出数据共用Google
-Drive的存储，如果能将两大杀器结合可能会有1+1\>2的效果。因此写了这个十分粗略的教程帮大家快速地薅到资本主义羊毛。
+近日，Google Colab 官方在Twitter上表示，将为用户提供免费的Tesla T4 GPU（16 GB显存，2560个CUDA核心，8.1 TFLOPS）。随着组内越来越多的同学开始研究深度学习的方法，若能使用Colab可以一定程度上缓解组内计算资源紧张的情况。同时在虚拟机上还预装了大多数需要用到的库（TensorFlow,Keras, Pytorch,GDAL……），对新人来说也省去了配置环境的时间，可以直接开搞。并且与GEE的导出数据共用Google Drive的存储，如果能将两大杀器结合可能会有1+1\>2的效果。因此写了这个十分粗略的教程帮大家快速地薅到资本主义羊毛。
 
 <img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/1.png"  width = 60% height = 60% style="float: right">
 
@@ -20,14 +17,14 @@ Drive的存储，如果能将两大杀器结合可能会有1+1\>2的效果。因
 1.  所用训练集不是特别大（数G以内）。
 
 2.  数据不存在**涉密**、有版权等不宜公开的问题。
-
+<br>
 
 自行准备：
 
 1. Google账号。
 
 2. 翻墙工具，实在没有可以找我用本人搭的代理。
-
+<br>
 
 Colab配置：
 
@@ -54,7 +51,7 @@ Colab配置：
 <img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/5.png"  width = 60% height = 60% style="float: right">
 
 6.  运行 “ !nvidia-smi
-    ”（运行ubuntu命令时要在前面加上！），若能出现图中结果，说明你成功薅到了资本主义羊毛。
+    ”（运行ubuntu命令时只需在前面加上！，若能出现图中结果，说明你成功薅到了资本主义羊毛。
 
 <img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/6.png"  width = 60% height = 60% style="float: right">
 
@@ -86,11 +83,11 @@ Colab配置：
 
 <img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/13.png"  width = 60% height = 60% style="float: right">
 
-5.  接下来怎么利用好这块卡就各凭本事啦。若已有实现好的代码，直接上传至Google Drive中用python命令运行即可。
+5.  接下来怎么利用好这块卡就各凭本事啦。 上述过程可参考该[例子](https://github.com/SilverSulfide/Colab-Tutorial/blob/master/examples/train.ipynb)。若已有实现好的代码，直接上传至Google Drive中用python命令运行即可。
 >   cd ..    
 >   ! python file.py
 
-<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/14.png"  width = 60% height = 60% style="float: right">
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/14.png"  width = 50% height = 50% style="float: right">
 
 注意事项
 --------
