@@ -1,16 +1,15 @@
 Colaboratory 免费GPU服务器使用教程
 ==================================
 
-刘寅贺 2019.4.27
+RSIDEA 刘寅贺 2019.4.30
 
 近日，Google Colab 官方在Twitter上表示，将为用户提供免费的Tesla T4 GPU（16 GB
-显存，2560个CUDA核心，8.1
-TFLOPS）。随着组内越来越多的同学开始研究深度学习的方法，若能使用Colab可以一定程度上缓解组内计算资源紧张的情况。同时在虚拟机上还预装了大多数需要用到的库（TensorFlow,
+显存，2560个CUDA核心，8.1 TFLOPS）。随着组内越来越多的同学开始研究深度学习的方法，若能使用Colab可以一定程度上缓解组内计算资源紧张的情况。同时在虚拟机上还预装了大多数需要用到的库（TensorFlow,
 Keras, Pytorch,
 GDAL……），对新人来说也省去了配置环境的时间，可以直接开搞。并且与GEE的导出数据共用Google
 Drive的存储，如果能将两大杀器结合可能会有1+1\>2的效果。因此写了这个十分粗略的教程帮大家快速地薅到资本主义羊毛。
 
-![](media/a6f2cb2cefddb20d943cf0a087270552.png)
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/1.png"  width = 60% height = 60% style="float: right">
 
 
 准备工作
@@ -22,44 +21,41 @@ Drive的存储，如果能将两大杀器结合可能会有1+1\>2的效果。因
 
 2.  数据不存在**涉密**、有版权等不宜公开的问题。
 
+
 自行准备：
 
-1.  Google账号。
+1. Google账号。
 
-2.  翻墙工具，实在没有可以找我用本人搭的代理。
-
-3.  进入Google
+2. 翻墙工具，实在没有可以找我用本人搭的代理。<br/>
+    
+    
+  
+1.  进入Google
     Drive（<https://drive.google.com/drive/my-drive>），所有Google用户应该都会开通Google
     Drive，若第一次使用让勾选隐私协议之类的一路同意即可。
 
-4.  通过Colab新建一个ipynb文件，现在可能会默认添加了Colab，若更多里没有Colab请参照第3步。
+2.  通过Colab新建一个ipynb文件，现在可能会默认添加了Colab，若更多里没有Colab请参照第3步。
 
-![](media/e22bec20afd87350fa459fa3b87d9826.png)
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/2.png"  width = 50% height = 50% style="float: right">
 
-![](media/a8dd894f2bb5b87844927d3d91747c91.png)
-
-1.  已有Colab请略过此步。
+3.  已有Colab请略过此步。
 
     选择“更多”中“关联更多应用”，搜索并安装Colab，重复步骤2，此处不多赘述。
 
-![](media/5f157247d3d1890ad764edb8eea1aeac.png)
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/3.png"  width = 50% height = 50% style="float: right">
 
-![](media/4c7b2bfc05ba2801f11a7b6b4785d6c6.png)
+4.  进入该界面表示Colab正常工作。
 
-2.  进入该界面表示Colab正常工作。
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/4.png"  width = 100% height = 100% style="float: right">
 
-![](media/4ccac37e52e1e51be514b45f8f271be5.png)
+5.  在“修改”内“笔记本设置”中将运行时类型设置为Python3，硬件加速器改为GPU。
 
-3.  在“修改”内“笔记本设置”中将运行时类型设置为Python3，硬件加速器改为GPU。
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/5.png"  width = 60% height = 60% style="float: right">
 
-![](media/57fa0f9e891f5418b7356c015aaf42ec.png)
-
-![](media/59585186514a0d2379b4a3aee6d86998.png)
-
-4.  运行 “ !nvidia-smi
+6.  运行 “ !nvidia-smi
     ”（运行ubuntu命令时要在前面加上！），若能出现图中结果，说明你成功薅到了资本主义羊毛。
 
-![](media/cd62fc02dcbc637b28bb4f0ccf0b3566.png)
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/6.png"  width = 60% height = 60% style="float: right">
 
 云端训练
 --------
