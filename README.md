@@ -4,7 +4,7 @@ Colaboratory 免费GPU服务器使用教程
     RSIDEA 刘寅贺 2019.4.30
 <br>
 
-近日，Google Colab 官方在Twitter上表示，将为用户提供免费的[Tesla T4](https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/t4-tensor-core-datasheet-951643.pdf) GPU（16 GB显存，2560个CUDA核心，8.1 TFLOPS）。随着组内越来越多的同学开始研究深度学习的方法，若能使用Colab可在一定程度上缓解组内计算资源紧张的情况。同时在虚拟机上还预装了大多数需要用到的库（TensorFlow,Keras, Pytorch,GDAL……），对新人来说也省去了配置环境的时间，可以直接开搞。并且与[GEE](https://earthengine.google.com/)的导出数据共用Google Drive的存储，如果能将两大杀器结合可能会有1+1\>2的效果。因此写了这个十分粗略的教程帮大家快速地薅到资本主义羊毛。
+近日，Google Colab 官方在Twitter上表示，将为用户提供免费的[Tesla T4](https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/t4-tensor-core-datasheet-951643.pdf) GPU，具有16 GB的大显存，2560个CUDA核心，8.1 TFLOPS,图灵架构下使用 Turing Tensor Core技术支持多精度加速（FP32、FP16、INT8 甚至 INT4）可使性能成倍地增长。随着组内越来越多的同学开始研究深度学习的方法，若能使用Colab可在一定程度上缓解组内计算资源紧张的情况。同时在虚拟机上还预装了大多数需要用到的库（TensorFlow,Keras, Pytorch,GDAL……），对新人来说也省去了配置环境的时间，可以直接开搞。并且与[GEE](https://earthengine.google.com/)的导出数据共用Google Drive的存储，如果能将两大杀器结合可能会有1+1\>2的效果。因此写了这个十分粗略的教程帮大家快速地薅到资本主义羊毛。
 
 <img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/0.png"  width = 40% height = 40% style="float: right">
 
@@ -28,8 +28,8 @@ Colaboratory 免费GPU服务器使用教程
 
 Colab配置：
 
-1.  进入Google
-    Drive（<https://drive.google.com/drive/my-drive>），所有Google用户应该都会开通Google
+1.  进入[Google
+    Drive](<https://drive.google.com/drive/my-drive>)，所有Google用户应该都会开通Google
     Drive，若第一次使用让勾选隐私协议之类的一路同意即可。
 
 2.  通过Colab新建一个ipynb文件，现在可能会默认添加了Colab，若更多里没有Colab请参照第3步。
