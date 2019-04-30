@@ -90,7 +90,7 @@ Colab配置：
 注意事项
 --------
 
-理论上Colab会毙掉一些长时间运行的虚拟机，注意保存。不过目前还没有遇到过这个问题，实测连续训练7小时没有任何问题。注意：Google
+理论上Colab会毙掉一些长时间运行的虚拟机，注意保存。不过目前还没有遇到过，实测连续训练7小时没有任何问题。注意：Google
 Drive的挂载有12小时限制，到时间需要重新挂载。
 
 <img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/15.png"  width = 100% height = 100% style="float: right">
