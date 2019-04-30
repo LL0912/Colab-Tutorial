@@ -26,10 +26,11 @@ Drive的存储，如果能将两大杀器结合可能会有1+1\>2的效果。因
 
 1. Google账号。
 
-2. 翻墙工具，实在没有可以找我用本人搭的代理。<br/>
-    
-    
-  
+2. 翻墙工具，实在没有可以找我用本人搭的代理。
+
+
+Colab配置：
+
 1.  进入Google
     Drive（<https://drive.google.com/drive/my-drive>），所有Google用户应该都会开通Google
     Drive，若第一次使用让勾选隐私协议之类的一路同意即可。
@@ -63,11 +64,9 @@ Drive的存储，如果能将两大杀器结合可能会有1+1\>2的效果。因
 1.  将数据集上传到Google
     Drive上，这一步是GEE用户的福利，可以跳过。据我测试上传数据集的速度十分感人，尤其当文件个数比较多的情况下更是慢得过分，强烈建议上传单个压缩文件，然后使用CloudConvert解压。首次使用CloudConvert还要注册、提供访问权限，在此不多赘述。
 
-![](media/d16bdb44d18bcf1b154fb43deec03bbb.png)
-
-![](media/5d4565b855b3385ef0f4aa54c160f5cf.png)
-
-![](media/23c613c762016c8a238b3ac883a70757.png)
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/7.png"  width = 60% height = 60% style="float: right">
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/8.png"  width = 60% height = 60% style="float: right">
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/9.png"  width = 60% height = 60% style="float: right">
 
 2.  为了访问google drive上的数据集，运行下面两行代码：
 
@@ -77,31 +76,21 @@ Drive的存储，如果能将两大杀器结合可能会有1+1\>2的效果。因
 
 3.  点击出现的链接，一路下一步，将授权码输入到框内回车。
 
-![](media/52fc4de14b7b7f1219b0909acee10683.png)
-
-![](media/729c787c38bea838abdbe1f7cc1d4105.png)
-
-![](media/c4b86b34c7349c66469a9070527ea03f.png)
-
-![](media/187fbcf1dfb4fb91587dbc503bbaec0a.png)
-
-![](media/677ab1fe9837f38646b1787386173ba2.png)
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/10.png"  width = 100% height = 100% style="float: right">
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/11.png"  width = 100% height = 100% style="float: right">
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/12.png"  width = 100% height = 100% style="float: right">
 
 4.  出现图中结果表明google
     drive挂载成功，在左边文件里可以看到云盘的文件夹，对该文件夹的读写会直接影响到云盘内的文件。需要注意的是，想要访问该文件夹还需要先执行‘cd
     ..’命令。
 
-![](media/0791304843ecc1f09b16627032bb63b7.png)
-
-![](media/a57cb6a31b24f64d046d67ba7bea85f6.png)
-
-![](media/507e3b2dc089f8a76a2ba0af9971f837.png)
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/13.png"  width = 60% height = 60% style="float: right">
 
 5.  接下来怎么利用好这块卡就各凭本事啦。若已有实现好的代码，直接上传至Google Drive中用python命令运行即可。
 >   cd ..    
 >   ! python file.py
 
-![](media/449ea3adaebad7b20d7176498e2c5501.png)
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/14.png"  width = 60% height = 60% style="float: right">
 
 注意事项
 --------
@@ -109,8 +98,8 @@ Drive的存储，如果能将两大杀器结合可能会有1+1\>2的效果。因
 理论上Colab会毙掉一些长时间运行的虚拟机，注意保存。不过目前还没有遇到过这个问题，实测连续训练7小时没有任何问题。注意：Google
 Drive的挂载有12小时限制，到时间需要重新挂载。
 
-![](media/5d26e62d4d24dafbe1baf8f3cd09d305.png)
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/15.png"  width = 100% height = 100% style="float: right">
 
 理论上关闭浏览器代码依旧会在虚拟机中运行，并且据我测试确实是这样，可以比较放心地挂机。但还是不太建议，因为虽然目前还没有没有遇到过，但是如果长时间没有Colab所希望的“交互”，进程可能还是会被杀掉。
 
-![](media/21d3b20869a9e3383e4381ea6b47aa5e.png)
+<img src="https://github.com/SilverSulfide/Colab-Tutorial/blob/master/figures/16.png"  width = 80% height = 80% style="float: right">
